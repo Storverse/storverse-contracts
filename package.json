@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/test-environment": "^0.1.9",
+    "chai": "^4.3.6"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.rinkeby.js",
+    "deploy:testnet": "npx hardhat run --network testnet scripts/deploy.testnet.js"
+  },
+  "devDependencies": {
+    "chai-as-promised": "^7.1.1",
+    "ethereum-waffle": "^4.0.10",
+    "hardhat": "^2.16.1"
+  }
+}
